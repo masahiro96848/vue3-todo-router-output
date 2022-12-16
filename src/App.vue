@@ -1,7 +1,3 @@
-<script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-</script>
-
 <template>
     <div class="container">
         <section class="container-area">
@@ -11,5 +7,9 @@ import { RouterLink, RouterView } from 'vue-router'
         </section>
     </div>
 </template>
+
+<script setup lang="ts">
+import { RouterLink, RouterView } from 'vue-router'
+</script>
 
 <style scoped></style>
