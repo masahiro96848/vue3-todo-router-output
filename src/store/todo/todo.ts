@@ -32,9 +32,15 @@ export const todoState = () => {
         ]
     }
 
+    // Todo削除機能
+    const deleteTodo = (id: number) => {
+        state.todoItems = state.todoItems.filter((todo) => todo.id !== id)
+    }
+
     return {
         state: readonly(state),
         addTodo,
+        deleteTodo,
     }
 }
 
